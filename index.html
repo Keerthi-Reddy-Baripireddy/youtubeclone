@@ -1,131 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Youtube Clone</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="toggle-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <img src="img/logo.PNG" class="logo" alt="" />
-      <div class="search-box">
-        <input type="text" class="search-bar" placeholder="search" />
-        <button class="search-btn"><img src="img/search.PNG" alt="" /></button>
-      </div>
-      <div class="user-options">
-        <img src="img/video.PNG" class="icon" alt="" />
-        <img src="img/grid.PNG" class="icon" alt="" />
-        <img src="img/bell.PNG" class="icon" alt="" />
-        <div class="user-dp">
-          <img src="img/k.png" alt="" />
+<link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Nunito:wght@300;400;700&family=Poppins:wght@200;300;400&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+     
+    <nav class="myNav youtubeMain">
+        <div class="leftNav">
+            
+            <i id="menubar" class="fa-sharp fa-solid fa-bars fontIcon" style="color: #0d0d0d; ;"></i>
+            <img src="https://t3.ftcdn.net/jpg/03/00/38/90/240_F_300389025_b5hgHpjDprTySl8loTqJRMipySb1rO0I.jpg">
         </div>
-      </div>
-    </nav>
-
-    <!-- sidebar -->
-    <div class="side-bar">
-      <a href="https://www.youtube.com/" class="links active"><img src="img/home.PNG" alt="" />home</a>
-      <a href="https://www.youtube.com/" class="links"><img src="img/explore.PNG" alt="" />explore</a>
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/subscription.PNG" alt="" />subscription</a
-      >
-      <hr class="seperator" />
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/photo-film-solid.svg" alt="" />library</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/clock-rotate-left-solid.svg" alt="" />history</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/circle-play-solid.svg" alt="" />your video</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/clock-solid.svg" alt="" />watch leater</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/thumbs-up-solid.svg" alt="" />like video</a
-      >
-      <hr class="separator" />
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/person-breastfeeding-solid.svg" alt="" />Trending</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/bag-shopping-solid.svg" alt="" />Shopping</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/clapperboard-solid.svg" alt="" />Movies</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/satellite-dish-solid.svg" alt="" />Live</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/utensils-solid.svg" alt="" />Food</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/music-solid.svg" alt="" />Music</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/gamepad-solid.svg" alt="" />Gaming</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/newspaper-solid.svg" alt="" />News</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/graduation-cap-solid.svg" alt="" />Learning</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/podcast-solid.svg" alt="" />prodcast</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/hat-cowboy-solid.svg" alt="" />Fashion & beauty</a
-      >
-      <a href="https://www.youtube.com/" class="links"
-        ><img src="img/show more.PNG" alt="" />show more</a
-      >
-    </div>
-
-    <!-- filters -->
-    <div class="filters">
-      <button class="filter-options active">all</button>
-      <button class="filter-options">CSS</button>
-      <button class="filter-options">web development</button>
-      <button class="filter-options">python</button>
-      <button class="filter-options">entertainment</button>
-      <button class="filter-options">marvel</button>
-      <button class="filter-options">javascript</button>
-      <button class="filter-options">artificial intelligence</button>
-      <button class="filter-options">machine learning</button>
-      <button class="filter-options">Gol Motol</button>
-      <button class="filter-options">trending</button>
-      <button class="filter-options">indian Remix</button>
-      <button class="filter-options">Live</button>
-      <button class="filter-options">nature</button>
-      <button class="filter-options">lofi mix</button>
-      <button class="filter-options">Human sagar</button>
-    </div>
-
-    <!-- videos -->
-    <div class="video-container">
-      <!-- <div class="video">
-            <img src="img/profile-pic.png" class="thumbnail" alt="">
-            <div class="content">
-                <img src="img/profile-pic.png" class="channel-icon" alt="">
-                <div class="info">
-                    <h4 class="title">youtube clone 2021 | create working youtube clone</h4>
-                    <p class="channel-name">modern web</p>
+        <div class="centreNav">
+            <div class="inputDiv">
+                <input  id="searchInput" type="text" placeholder="search">
+               
+                <div id="searchDiv"class="searchDiv">
+                    <i  class="fa-solid fa-magnifying-glass fontIcon" style="color: #0a0a0a;"></i>
                 </div>
             </div>
-        </div> -->
+            <div class="mic">
+                <i class="fa-solid fa-microphone" style="color: #0c0d0d;"></i>
+
+
+            </div>
+        </div>
+        <div class="rightNav">
+
+            <i class="fa-solid fa-video fontIcon" style="color: #0a0a0b;"></i>
+            <i class="fa-regular fa-bell fontIcon" style="color: #050505;"></i>
+
+            <i  class="fa-solid fa-magnifying-glass fontIcon" style="color: #0a0a0a;"></i>
+
+            <div id="profile" class="profile"> K</div>
+        </div>
+    </nav>
+    <main >
+        <div id="leftSection" class="leftSection">
+            
+            <div class="menuCards mo">
+                <i class="fa-solid fa-house" style="color: #111212;"></i>
+
+                <p>Home</p>
+
+            </div>
+            <div class="menuCards mo">
+                <i class="fa-solid fa-bolt" style="color: #0c0d0d;"></i>
+
+                <p>Shorts</p>
+
+            </div>
+            <div class="menuCards mo">
+                <i class="fa-brands fa-youtube" style="color: #0c0d0d;"></i>
+
+                <p>Subscription</p>
+
+            </div>
+            <div class="horizontalLine"></div>
+
+            
+            <div class="menuCards mo">
+                
+
+                <h3>You</h3>
+
+            </div>
+            
+            <div class="menuCards mo">
+                <i class="fa-solid fa-user" style="color: #131416;"></i>
+
+                <p>Your channel</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-clock-rotate-left" style="color: #121212;"></i>
+
+                <p>History</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-video" style="color: #141414;"></i>
+
+                <p>Your videos</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-regular fa-clock" style="color: #141414;"></i>
+
+                <p>Watch later</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-angle-down" style="color: #070808;"></i>
+
+                <p>show more</p>
+
+            </div>
+
+            <div class="horizontalLine"></div>
+            <br>
+
+            <div >
+                
+
+                <h3>Explore</h3>
+
+            </div>
+            
+            <div class="menuCards mo">
+                <i class="fa-solid fa-cart-shopping" style="color: #0f0f10;"></i>
+
+                <p>Shopping</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-headphones" style="color: #0f0f0f;"></i>
+
+                <p>Music</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-clapperboard" style="color: #0a0a0b;"></i>
+
+                <p>Movie</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-gamepad" style="color: #0a0a0a;"></i>
+
+                <p>Gamming</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-regular fa-newspaper" style="color: #0c0d0d;"></i>
+
+                <p>News</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-solid fa-medal" style="color: #131415;"></i>
+
+                <p>Sports</p>
+
+            </div>
+
+            <div class="menuCards mo">
+                <i class="fa-regular fa-lightbulb" style="color: #202122;"></i>
+
+                <p>Learning</p>
+
+            </div>
+
+            
+
+            <div class="horizontalLine"></div>
+            <br>
+         <div id="copyRightSystem">
+            <p> About Press copyright Contact us Creators Advertise Developers</p>
+            <br>
+
+            <p>
+        Terms PrivacyPolicy &safety </p>
+        <p>How Youtube Works</p>
+        <p>Test new feature</p>
+            </p>
+
+            <br>
+
+            <p class="copyright">
+                @ 2023 Google LLC
+
+            </p>
+            
+        </div>  
+
+        
+
+            
+
+
+            
+
+
+
+            
+        </div>
+        <div class="rightSection">
+
+            <div class="menuRightSection">
+
+                <div class="menuOptions">
+
+                All
+                </div>
+                <div class="menuOptions">
+
+                <pre>Virat Kohli</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>Music</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>MS Dhoni</pre>
+                </div>
+                <div class="menuOptions">
+
+               Mixes
+                </div>
+                <div class="menuOptions">
+
+                LIVE
+                </div>
+                <div class="menuOptions">
+
+                <pre>Computer Programming</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>Civil Service Exams</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>Thoughts</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>Vegetarian Recepies</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>exercise</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>Recepies</pre>
+                </div>
+                
+                <div class="menuOptions">
+
+               <pre>Dinner</pre>
+                </div>
+                
+                
+                <div class="menuOptions">
+
+                <pre>Weight</pre>
+                </div>
+                <div class="menuOptions">
+
+                <pre>Running</pre>
+                </div>
+
+            </div>
+
+            <div id="scrollableRightSections" class="scrollableRightSections">
+                <!-- <div class="videoCard">
+                    <img>
+                    <div class="channel">
+                        <img>
+                        <h3>frtghyuj juiklo tyhh huejekje nbdht4ihoe hthe</h3>
+                    </div>
+                    <div class="channelInfo">
+                        <p>erftg njii tg</p>
+                        <p> cdrvv nu</p>
+                    </div>
+
+
+                </div> -->
+                
+
+            </div>
+
+        </div>
+        
+        
+    </main>
+
+    <div class="mobMenuDiv">
+
+        <div class="MENUCARDS mo">
+            <i class="fa-solid fa-house" style="color: #111212;"></i>
+
+            <p>Home</p>
+
+        </div>
+
+        <div class="MENUCARDS mo">
+            <i class="fa-solid fa-bolt" style="color: #0c0d0d;"></i>
+
+            <p>Shorts</p>
+
+        </div>
+
+        <div class="MENUCARDS mo">
+            <i class="fa-solid fa-circle-plus" style="color: #000000;"></i>
+
+            
+
+        </div>
+
+
+
+        <div class="MENUCARDS mo">
+            <i class="fa-solid fa-clock-rotate-left" style="color: #121212;"></i>
+
+            <p>History</p>
+
+        </div>
+
+        <div class="MENUCARDS mo">
+            <i class="fa-brands fa-youtube" style="color: #0c0d0d;"></i>
+
+            <p>Subscription</p>
+
+        </div>
+
+        
+
+        <div id="mobProfile" class="profile"> K</div>
+
+
     </div>
 
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script src="app.js"></script>
-  </body>
+   
+
+    <script src="./script.js"></script>
+</body>
 </html>
